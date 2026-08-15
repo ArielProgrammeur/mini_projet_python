@@ -1,0 +1,70 @@
+							# PROJET 1 : Calculatrice CLI
+
+		#Comment fonctionne exactement le projet ? :
+ 
+	L'orsque le user lance le script dans son terminal, Il voit un menu s'afficher. Il choisit une operation en tapant un chiffre.
+Le programme lui demande ensuite d'entrer 2 nombres, Affiche le resultat puis redemande automatiquement au user s'il veut refaire un autre 
+calcule. Le programme tourne en  boucle jusqu'a ce que le user tape "Q" pour quitter.
+
+
+							# FLOW COMPLET :
+
+						1- Le user lance le script dans son terminal
+							
+							AFFICHAGE DU MENU
+
+						# BIENVENU SUR VOTRE CALCULATRICE PYTHON #
+						
+							# 1- Addition
+							# 2- Soustraction
+							# 3- Multiplication
+							# 4- Division
+							# Q- Quitter
+
+						2- Le message lui demandant de choisir une action s'affiche
+
+	# Entrez le chiffre de l'operation que vous souhaitez effectuer ou Q pour quitter.  Qu'elle Action souhaitez vous effectuer ? :
+						Le user tape par exemple 3  
+
+						3- Le programme lui demande donc d'enter les nombre pour effectuer l'operation
+
+							# Entrez le premier nombre : 
+							Le user tape 15 par exemple
+							# Entrez le deuxieme nombre :
+							Le user tape 30 par exemple
+
+						4- Le programme lui retourne le resultat 
+
+							# Le Resultat de la multiplication de : 15 * 30 = 450 
+
+						5- Le programme demande une action du user pour retourner a l'affichage du menu 
+
+							# Appuyez sur entrer pour continuer ...
+
+						6- Apres avoir appuyez sur entrer le programme retourne au menu 
+
+
+
+
+					# CAS PARTICULIER A GERER DANS L'ECRITURE DU CODE
+
+	# 1- If le user select division entre le premier nombre superieur a 0 et le 2 inferieur ou egale a 0 
+
+		print ( " Erreur : Division par 0 impossible " ) NB: Le programme ne doit pas crasher et retourne plutot au menu
+
+	# 2- If le user tape une lettre au lieu d'un nombre 
+
+		print ( " Erreur : Veuillez entrer un nombre valide " ) NB: Le programme ne crash pas et retourne plutot au menu   
+
+
+						# BONUS/INDICE
+
+		# 1- STRUCTURE DU CODE A CONSTRUIRE : 
+		
+			# Le code doit contenir 5 fonctions separees : 
+				additionner (a, b) retourne a + b
+				soustraire (a, b) retourne a - b
+				multiplier (a, b) retourne a * b
+				diviser (a, b) retourne a/b avec gestion de la division par 0
+				calculatrice () fonction principale qui contient le menu , la boucle while et appelle les autre fonctions
+				selon le choix du user 

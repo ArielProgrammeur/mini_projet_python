@@ -41,19 +41,19 @@ while continue_gamme:
         print(f" Congratulations ! you won the game ! Your gain is {bet * 3} Tokens.")
         tokens += bet * 3
     elif winning_number % 2 == 0 and player_number % 2 == 0 or winning_number % 3 == 0 and player_number % 3 == 0 :
-        partial_win = ceil(mise * 0.5)
+        partial_win = ceil(bet * 0.5)
         print(f" You guessed the correct category! You win {partial_win * 0.5} tokens")
         tokens += partial_win
     else :
         print(" Sorry,  you lost your bet. Try again!")
         tokens -= bet
 
-    if token <= 0 :
+    if tokens <= 0 :
         print(" Game over! You have no token left.")
-        continu_game = False
+        continue_game = False
     else:
         print(f" You now have {tokens} tokens.")
         match input(" Do you want to leave the casino (y/n)?").lower():
             case "y" :
                 print(" You leave the game with your winnings")
-                continu_game = False
+                continue_game = False

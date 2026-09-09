@@ -80,7 +80,7 @@
 				# Celsius --> Kelvin : c + 273.15    	    "** On rajoute le grand nombre 273.15 **"
 			# DISTANCE : 
 
-				# Kilometre --> Milles : km * 0.621371
+				# Kilometre --> Miles : km * 0.621371
 				# Miles --> Kilometres : miles * 1.60934
 				# Metres --> Pieds : m * 3.28084
 

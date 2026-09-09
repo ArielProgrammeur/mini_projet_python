@@ -1,0 +1,91 @@
+								
+							#PROJET 3 : CONVERTISEUR MULTI UNITES 
+
+		# RAPPEL :
+			La Conversion : Consiste tout simplement a traduire une mesure d'une langue a une autre.
+			La Temperature : Permet d'indiquer si un objet est ou l'air est chaud ou froid.
+			La Distance : Pour mesurer l'espace entre 2 points (Longueur, Largueur, Hauteur ou eloignement d'un objet)
+			La Masse/Poids : pour messurer la quantite de matiere d'un objet ( ce qui indique s'il est lourd ou leger)
+
+	Sachant que pour messurer la temperature on utilise principalement 3 unites : 
+	# le °Celsius (°C) : C'est l'unite utilise au quotidien dans la pluspart des pays. son repere : "L'eau gele a 0°C et bout a 100 °C"  
+	# le °Fahrenheit (°F) : C'est l'unite de temperature utilisee principalement aux USA. son repere : "L'eau gele a 32°F et bout a 100°F"
+	# le °Kelvin (K) : C'est l'unite scientifique internationale. Elle commence au <<0 absolu>>, la temperature la plus froide possible dans l'univer est  (0K = -273.15°C ).
+
+	Sachant que pour mesurer la distance on a le systeme metrique (Utilise partout dans le monde) et le systeme imperial (USA et Royaume-Uni)	
+	# -1- LE SYSTEME METRIQUE (Utilise partout dans le monde) ****
+
+	# Le Metre (m) : C'est l'unite de base pour mesurer une personne ou une piece
+	# Le Centimetre (cm) et Milimetre (mm) : Pour messurer de petits objets(ex: une regle graduee). son repere : 1 M = 100 Cm = 1000 Mm.
+	# Le Kilometre (Km) : Pour messurer de longueu distances (ex: entre 2 villes). Son repere : 1 Km = 1000 M  
+
+	# -2- LE SYSTEME IMPERIAL (utilise aux USA et Royaume-Uni) ****
+
+	# Le Pouce (inch-in) : Designe Environ la Largeur d'un pouce. son repere : 1 in = 2.54 Cm
+	# Le Pied (foot-ft) : Designe Environ la longueur d'un grand pied humain(une grande chaussure). son repere : 1 ft = 12 in = 30.48 Cm
+	# Le Mile (mi) : Utilisee pour la vitesse et la distance sur la route. son reper : 1 mi = 1.609 Km.
+ 
+	Sachant que pour mesurer le poids on egalement 2 systemes : le systeme metrique et le systeme imperial :
+	# -1- LE SYSTEME METRIQUE (Utilise partout dans le monde) ****
+
+	# Le Gramme (g) : C'est l'unite de base pour les objets tres leger(ex: une feuille de papier etc..)
+	# Le Kilogramme (Kg) : C'est l'unite pour peser les objet un peut plus lourd(ex: Corps humain ou aliment). son repere : 1 kg = 1000 g
+	# La Tonne (t) : Unite pour peser les objets tres lourd(ex : voiture etc..). son repere : 1 t = 1000 kg
+
+	# -2- LE SYSTEME IMPERIAL (USA et Royaume-Uni)
+
+	# L'Once (ounce-oz) : Pour peser des objet leger(ex : aliments etc..). son repere : 1 oz = 28.35 g
+	# La Livre (pound-lb) : L'unite courante pour le poids des personnes ou paquets. son repere : 1 lb = 0,453 kg = 453 g 
+						## CE QUE FAIS LE PROJET :
+
+					Le user lance le script, un menu principal s'affiche avec 3 categories de conversion.
+			Un sous menu s'affiche avec les conversions disponibles pour cette categorie. Il choisit la conversion, entre une 
+		valeur et le resultat s'affiche. Le programme revient au menu principal automatiquement.
+
+
+					### FLOW COMPLET DU POROJET :
+
+						# Lancemant du script :
+			
+						# 1- Affichage du menu principale : 
+		
+							# MENU PRINCIPAL :
+							# -1- Temperatures
+							# -2- Distances
+							# -3- Poids
+							# -Q- Quitter
+
+						# 2- Le user choisit une convertion en tapant le nombre qui y est associe (EXP : 1)
+
+							# SOUS-MENU TEMPERATURES
+								# -1- Celsius --->  Fahrenheit
+								# -2- Fahrenheit ---> Celsius
+								# -3- Celsius ---> Kelvin
+								# -R- Retour au menu principal
+						# 3- Le user tape 1
+
+							# -1- "Entrez la temperature en celsius : " (Le user entre 25)
+							# -2- "25c = 77.0F"
+
+						# Retour au sous-menu temperatures
+
+		#NB :
+
+		Sachant que : 
+
+			#TEMPERATURE : 
+
+				# Celsius --> Fahrenheit : (c * 9/5) + 32    "** On multiplie par 9/5 = 1.8 et on rajoute 32 **"
+				# Fahrenheit --> Celsius : (f - 32) * 5/9   " ** On enleve 32 et on divise par 1.8 ou on multiplie par 5/9"
+				# Celsius --> Kelvin : c + 273.15    	    "** On rajoute le grand nombre 273.15 **"
+			# DISTANCE : 
+
+				# Kilometre --> Miles : km * 0.621371
+				# Miles --> Kilometres : miles * 1.60934
+				# Metres --> Pieds : m * 3.28084
+
+			# POIDS : 
+
+				# Kilogrammes --> Livres : Kg * 2.20462
+				# Livres --> Kilogrammes : Lbs * 0.453592
+				# Grammes --> Onces : G * 0.035274

@@ -42,16 +42,16 @@ def calculatrice() :
         print ("4. Division")
         print ("Q. Quitter")
 
-        choice = input("Choisisez l'operation que ous souhaitez effectuer en entrant le caractere qui y est associe EXP: 1,2,3,4 ou Q pour quitter : ")
+        choice = input("Choisisez l'operation que vous souhaitez effectuer en entrant le caractere qui y est associe EXP: 1,2,3,4 ou Q pour quitter : ")
 
         if choice == "1" :
             print("Vous avez choisis l'addition !!!")
-            a,b =demander_nombre("Addition")
+            a,b = demander_nombre("Addition")
             if a is not None :
                 print(f"Le resultat de l'addition de {a} + {b} est : ",additionner(a, b))
         elif choice == "2" :
             print("Vous avez choisis la soustraction !!!")
-            a, b =demander_nombre("Soustraction")
+            a, b = demander_nombre("Soustraction")
             if a is not None :
                 print(f"Le resultat de la soustraction de {a} - {b} est : ",soustraction(a, b))
         elif choice == "3" :
